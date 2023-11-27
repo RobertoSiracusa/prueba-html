@@ -1,0 +1,109 @@
+@font-face {
+    font-family: radjani;
+    src: url('assets/font/Rajdhani-Regular.ttf');
+}
+*{
+    list-style: none;
+    font-family: radjani;
+    color:rgb(0, 240, 255);
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#background{
+    background-image:linear-gradient(180deg,#4B0E20,#3C0C1A,#090911); 
+    background-size:100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-repeat:repeat-y;
+}
+.menuLateral{
+    background-color: #090911;
+    padding-right:11px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    position: fixed;
+    height: 100%; /* 100% Full-height */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.menuLateral::-webkit-scrollbar { /*esconde la barra de scroll, mantiene funcionalidad*/
+    display: none;
+}
+.menuLateral ul{
+    background-color:#170D16;  
+    margin-bottom: 10px;
+}
+.menuLateral ul li{
+display: flex;
+font-size: 18px;
+width: 34px;
+font-weight: 600;
+margin-left: 39px;
+margin-top:25px;
+align-items: center;
+gap: 20px;
+}
+
+.imagenCancionLateral{
+    width: 53px;
+    height: 50px;
+}
+/* .menuLateral ul li div{
+    display: flex;
+    font-size: 18px;
+    width: 34px;
+    font-weight: 600;
+    margin-left: 39px;
+    margin-top:25px;
+    align-items: center;
+    gap: 20px;
+    } */
+.menuLateralCancion{
+    display: flex;
+    width: 100%;
+
+}
+.nombreInfoCancion{
+    font-size: 18px;
+}
+.autorInfoCancion{
+    font-size: 14px;
+}
+.imagenCancionLateral{
+    width: 53px;
+}
+#tracklist{
+    display: flex;
+    flex-direction: column;
+}
+#controlPlayer{
+    width: 1px;
+
+}
+h1{
+    font-size: 32px;
+    color: red;    
+}
+main{
+    position: scroll;
+    margin-left: 290px;
+}
+.grupoCancionesGuardadas p{
+    min-width: max-content;
+    
+}
+.menuLateral ul li p{
+    min-width: max-content;
+}
