@@ -55,7 +55,9 @@ margin-top:25px;
 align-items: center;
 gap: 20px;
 }
-
+.menuLateralInf{
+    padding-bottom: 100%;
+}
 .imagenCancionLateral{
     width: 53px;
     height: 50px;
@@ -63,6 +65,7 @@ gap: 20px;
 .menuLateralCancion{
     display: flex;
     width: 100%;
+    margin-top: 20px;
 
 }
 .nombreInfoCancion{
@@ -79,16 +82,22 @@ gap: 20px;
     flex-direction: column;
 }
 #controlPlayer{
-    width: 1px;
-
+    width: 75%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    margin-left: 290px;
 }
 h1{
     font-size: 32px;
-    color: red;    
+    color: rgb(0, 240, 255);
+    
+   
 }
 main{
     position: scroll;
-    margin-left: 290px;
+    margin-left: 385px;
+    
 }
 .grupoCancionesGuardadas p{
     min-width: max-content;
@@ -96,4 +105,11 @@ main{
 }
 .menuLateral ul li p{
     min-width: max-content;
+}
+#grupoBotonesSup{
+    margin-top: 38px;
+    margin-left: -36px;
+}
+#grupoBotonesSup img{
+    margin-left: 36px;
 }
